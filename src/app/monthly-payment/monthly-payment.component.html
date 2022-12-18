@@ -1,0 +1,20 @@
+
+<mat-card class="payment-card mat-elevation-z0">
+    <mat-card-subtitle
+      class="payment-sub"
+      style="text-align: center; font-size: 24px"
+      >Your Monthly Payment:</mat-card-subtitle
+    >
+    <div>
+      <mat-card-content>
+        <div
+          class="payment-content"
+          class="payment-sub"
+          style="text-align: center; font-size: 24px"
+        >
+          <!-- Passed In values monthly-payment -->
+          {{ "$" + (monthlyPayment | number : "1.2-2") }}
+        </div>
+      </mat-card-content>
+    </div>
+  </mat-card>
